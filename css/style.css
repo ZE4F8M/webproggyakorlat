@@ -1,0 +1,104 @@
+/* Háttérkép az egész oldalra */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("../img/hatter.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fejlécek színezése */
+h1, h2 {
+  color: #2d572c;
+}
+
+/* Navigáció */
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-link {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+  color: #d4f2ce;
+  text-decoration: underline;
+}
+
+/* Gomb stílus */
+.btn-success {
+  background-color: #2d572c;
+  border-color: #2d572c;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #3e7b3c;
+}
+
+/* Tartalom háttér, jól olvasható fehér dobozban */
+main.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Képnagyítás animációval */
+.hover-zoom {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Űrlap */
+input, textarea {
+  border-radius: 6px !important;
+  border: 1px solid #ccc !important;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #2d572c !important;
+  box-shadow: 0 0 5px rgba(45, 87, 44, 0.4);
+}
+
+/* Táblázatok */
+table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #d4f2ce;
+}
+
+tbody tr:hover {
+  background-color: #f0fff3;
+}
